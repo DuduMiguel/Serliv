@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Has na prática</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        input {
+            accent-color: green;
+        }
+
+        td,th {
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #ddd;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tr:hover{
+            background-color: #e9e9e9;
+        }
+
+        tr:has(input[type="checkbox"]:checked){
+            background-color: #aaffaa;
+        }
+
+        input:hover, label:hover{
+            cursor: pointer;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Lista Funcionários</caption>
+
+
+        <thead>
+            <th>checkbox</th>
+            <th>nome</th>
+            <th>email</th>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" name="cb1" id="cb1">
+                    <label for="cb1">Li e concordo</label>
+                </td>
+                <td>Raul</td>
+                <td>raul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="cb2" id="cb2">
+                    <label for="cb2">Li e concordo</label>
+                </td>
+                <td>Raul</td>
+                <td>raul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="cb3" id="cb3">
+                    <label for="cb3">Li e concordo</label>
+                </td>
+                <td>Raul</td>
+                <td>raul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="cb4" id="cb4">
+                    <label for="cb4">Li e concordo</label>
+                </td>
+                <td>Raul</td>
+                <td>raul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="cb5" id="cb5">
+                    <label for="cb5">Li e concordo</label>
+                </td>
+                <td>Raul</td>
+                <td>raul@gmail.com</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</body>
+
+</html>

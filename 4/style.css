@@ -1,0 +1,107 @@
+body{
+    font-family: sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+
+header.hero{
+    background-image: url('imagens/bg-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 70vh;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    margin-top: 120px;
+}
+
+header h2{
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.384);
+    color: white;
+    padding: 6px;
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 30%;
+    border-bottom: 2px solid;
+}
+
+ul{
+    text-align: right;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color:  hsla(0, 0%, 0%, 0.384);
+    padding: 15px;
+    margin: 0 5px 0 10px;
+    border: 2px solid;
+}
+
+a:hover{
+    background-color:  hsla(0, 0%, 0%, 0.500);
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section{
+    background-color: #f0f0f0;
+    margin: 15px 0;
+    padding: 25px;
+    margin-top: 25px;
+    padding-bottom: 7px;
+}
+
+section h2{
+    background-color: hsla(0, 0%, 0%, 0.151);
+    border-bottom: 2px solid  hsla(0, 0%, 0%, 0.500);
+    padding: 6px 0px 10px 10px;
+    margin: 0;
+}
+
+section p{
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+
+section a{
+    text-align: left;
+    margin-left: 0;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer{
+    text-align: right;
+}
+
+footer.footer{
+    background-color: hwb(0 0% 100% / 0.418);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+

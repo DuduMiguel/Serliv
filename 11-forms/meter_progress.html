@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e Progress</title>
+
+    <style>
+        input, progress{
+            accent-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Meter</h1>
+
+    <label for="combustivel">nivel do combustivel
+        <meter id="combustivel" min="0" max="100" low="30" high="90" optimum="95" value="90"></meter>
+    </label>
+
+    <h1>Progress</h1>
+
+    <label> Porcetagem da tarefa
+        <progress max="100" value="70"> 70% </progress>
+    </label>
+
+</body>
+
+</html>

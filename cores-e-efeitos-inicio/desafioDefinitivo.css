@@ -1,0 +1,124 @@
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.card-title {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.card-description {
+    font-size: 19px;
+}
+
+div.container {
+    width: 95%;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.card {
+    flex-basis: clamp(300px, calc(33% - 25px), 400px);
+    flex-grow: 1;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 40px 30px 40px;
+    margin: 0 0 50px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.chanfrado {
+    background-color: white;
+    background: linear-gradient(135deg, transparent 25px, white 25px);
+}
+
+.dobrado {
+    background-color: white;
+    background: linear-gradient(135deg, transparent 25px, grey 25px), linear-gradient(135deg, transparent 25px, white 25px);
+    background-size: 35px 35px, 100%;
+    background-repeat: no-repeat;
+}
+
+.dobrado-sombreado-border {
+    /*Usando tatica do border */
+    background-color: white;
+    position: relative;
+}
+
+.dobrado-sombreado-border::before {
+    /*Usando tatica do border */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 35px solid brown;
+    border-right: 35px solid grey;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.dobrado-sombreado {
+    /* Usando a técnica de linear-gradient */
+    background-color: white;
+    background: linear-gradient(135deg, transparent 25px, white 25px);
+    position: relative;
+}
+
+.dobrado-sombreado::before {
+    /* Usando a técnica de linear-gradient */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, transparent 25px, grey 25px);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+/* a principal diferença de usar a técnica do border está no filter que quando aplicado gera um efeito 3D da cor marrom*/
+
+.dobrado-clipPath {
+    background-color: white;
+    position: relative;
+}
+
+.dobrado-clipPath::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.dobrado-clipPath::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: brown;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+/*usando a técnica do clip-path não conseguir aplicar sombra nos elementos */

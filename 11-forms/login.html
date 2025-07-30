@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        html {
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            font-size: 62.5%;
+            background-color: #95a5a6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.4em;
+        }
+
+        form {
+            width: 35em;
+            padding: 1.6em;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        legend {
+            text-align: center;
+            padding: 1em;
+            font-weight: bold;
+            color: #454e4f;
+            font-size: 1.92em;
+        }
+
+        input,
+        label {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin-bottom: .25em;
+            font-size: 1.2em;
+        }
+
+        input {
+            padding: .75em;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+            margin-bottom: 1.5em;
+            font-size: 1.6rem;
+        }
+
+        .btn-containers {
+            display: flex;
+            justify-content: space-between;
+            gap: 1em;
+        }
+
+        .btn {
+            color: white;
+            transition: all .2s ease-in-out;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            background-color: rgb(30, 30, 175);
+        }
+
+        .btn-submit:hover {
+            background-color: rgb(23, 23, 116);
+        }
+
+        .btn-reset {
+            background-color: rgb(230, 20, 20);
+        }
+
+        .btn-reset:hover {
+            background-color: rgb(189, 20, 20);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Formulário Login</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>Entre com seus dados de acesso</legend>
+
+
+            <label for="user">Usuário: </label>
+            <input type="text" name="user" id="user" placeholder="Digite seu usuario: " required autofocus>
+
+
+
+            <label for="password">Senha: </label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha: " required>
+
+
+            <div class="btn-containers">
+                <input class="btn btn-submit" type="submit" value="Entrar">
+                <input class="btn btn-reset" type="reset" value="Apagar">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

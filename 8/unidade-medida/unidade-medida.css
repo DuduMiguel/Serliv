@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+p{
+    font-size: 3em; 
+}
+
+b{
+    font-size: 3rem; 
+}
+
+.em{
+    width: 20em;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 1.6em;
+}
+
+.ch{
+    width: 20ch;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 1.6em;
+}
+
+.view{
+    background: blue;
+    height: 350px;
+    width: 50vmax;
+}

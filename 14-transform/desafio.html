@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Checkbox com TRANSFORM</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body {
+            max-height: 100vh;
+        }
+
+        .ckb1 {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+
+        .ckb1[type="checkbox"]:focus+label span {
+            outline: 1px solid black;
+        }
+
+        .ckb1+label span {
+            display: inline-block;
+            font-size: 20px;
+            height: 1em;
+            width: 1em;
+            background-color: red;
+        }
+
+        .ckb1:checked+label span {
+            position: relative;
+            background-color: #aaffaa;
+        }
+
+        .ckb1:checked+label span::before {
+            content: "";
+            display: block;
+            border: .097em solid green;
+            position: absolute;
+            top: .077em;
+            right: .38em;
+            left: .30em;
+            bottom: .30em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+        .lbl input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+
+        .lbl input[type="checkbox"]:focus+span{
+            outline: 1px solid black;
+        }
+
+        .lbl span {
+            display: inline-block;
+            font-size: 26px;
+            height: 1em;
+            width: 1em;
+            background-color: rgb(233, 17, 17);
+            position: relative;
+            transition: background-color .3s;
+
+        }
+
+        .lbl input[type="checkbox"]:checked+span {
+            background-color: green;
+        }
+
+        .lbl input[type="checkbox"]+span::before {
+            content: "";
+            border: .097em solid white;
+            position: absolute;
+            top: .077em;
+            right: .38em;
+            left: .30em;
+            bottom: .30em;
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-left-color: transparent;
+            opacity: 0;
+            transition: opacity .6s;
+        }
+
+        .lbl input[type="checkbox"]:checked+span::before {
+            opacity: 1;
+        }
+
+        label.custom-checkbox {
+            cursor: pointer;
+            position: relative              ;
+        }
+
+        label.custom-checkbox input {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+
+        label.custom-checkbox input:focus ~ span{
+            outline: 1px solid #575757                     ;
+        }
+
+        span.checkmark {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 62.5%;
+            height: 1.3em;
+            width: 1.3em;
+            background-color: #ccc;
+            /* Fundo quando não marcado */
+
+            border-radius: .2em;
+            /* Opcional: bordas arredondadas */
+
+            display: inline-block;
+
+            cursor: pointer;
+
+        }
+
+        /* .custom-checkbox:hover input~.checkmark {
+            background-color: #f9f9f9;
+             Cor de hover suave
+        } */
+
+        /* Estilo quando marcado (opcional) */
+        .custom-checkbox input:checked~.checkmark {
+            background-color: black;
+            /* Cor de fundo quando marcado */
+            border-color: transparent;
+            /* Cor da borda quando marcado */
+        }
+
+        /* Ícone de check (aparece só quando marcado) */
+        .custom-checkbox input~.checkmark:after {
+            content: "";
+            position: relative;
+            display: block;
+            left: .4em;
+            top: .03em;
+            width: .3em;
+            height: .8em;
+            border: solid yellow;
+            border-width: 0 .2em .2em 0;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity .6s;
+        }
+
+        .custom-checkbox input:checked~.checkmark:after {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="checkbox" name="html" id="html" checked class="ckb1">
+    <label for="html" id="html">
+        <span class="tabindex"></span>
+        HTML
+    </label>
+    </input>
+
+    <input type="checkbox" name="css" id="css" class="ckb1">
+    <label for="css" id="css">
+        <span class="tabindex"></span>
+        CSS
+    </label>
+    </input>
+
+
+
+    <input type="checkbox" name="js" id="js" class="ckb1">
+    <label for="js" id="js">
+        <span class="tabindex"></span>
+        JavaScript
+    </label>
+    </input>
+
+    <hr>
+
+    <label class="lbl">
+        <input type="checkbox" checked>
+        <span></span>
+        HTML
+    </label>
+
+    <label class="lbl">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="lbl">
+        <input type="checkbox">
+        <span></span>
+        JS
+    </label>
+
+
+    <label class="custom-checkbox">
+        <input type="checkbox" checked>
+        <span class="checkmark"></span>
+        Meu Checkbox
+    </label>
+
+    <input type="checkbox" checked name="" id="" class="bla">
+
+</body>
+
+</html>

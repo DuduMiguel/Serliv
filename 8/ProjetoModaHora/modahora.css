@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-size: 62.5%;
+    width: 960px;
+    margin: 0 auto;
+}
+
+:root{
+    --bgColor-Header: #162028;
+    --textColor-Menu: #425564;
+    --textColor: #555;
+    --bgColor-box: #003d52;
+    --bgColor-Footer: #0b171f;
+    --TextColor-Footer: #6f8597;
+}
+
+header{
+    background-color: var(--bgColor-Header);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.main-title{
+    font-family: 'Viaoda Libre', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 2rem;
+    margin-left: 15rem;
+}
+
+.list-links{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    margin: 1rem;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--textColor-Menu);
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    transition: color, .6s, ease-out, .5s;
+}
+
+a:hover{
+    color: white;
+}
+
+img{
+   width: 100%;
+}
+
+main{
+    margin-top: 3em;
+}
+article.descripition{
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+article.descripition > h2{
+    font-family: 'Viaoda Libre', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 1rem;
+   
+}
+
+article.descripition > p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 2em;
+    padding: 0;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+article.portifolio{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2.5em 5em;
+    justify-content: space-evenly;
+}
+
+article.portifolio > section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+article.portifolio > section > img{
+    width: 25em;
+    height: 19.2em;
+}
+
+article.portifolio > section > p.img-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--textColor);
+    letter-spacing: .1em;
+    padding: .5em;
+}
+
+article.portifolio > section > p.img-description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-size: 1.5em;
+    color: var(--textColor-Menu)
+}
+
+article.about{
+   
+    padding: 5rem;
+    background-color: var(--bgColor-box);
+    background-image: url('imagens/bg_detalhe.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+article.about > h2{
+    color: white;
+    font-family: 'Viaoda Libre', sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+article.about > p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    width: 80%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+   
+    
+}
+
+footer{
+    padding: 1.5rem;
+    background-color: var(--bgColor-Footer);
+    color: var(--TextColor-Footer);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .3rem;
+    
+}

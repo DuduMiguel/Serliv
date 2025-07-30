@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+
+    <style>
+        textarea {
+            resize: none;
+        }
+
+
+        input,
+        progress {
+            accent-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="#" method="get">
+
+        <fieldset>
+
+            <legend>Introdução</legend>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required placeholder="Insira seu email" autofocus>
+
+            <textarea name="" id="" rows="10" cols="30"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+
+        <fieldset>
+
+            <label>
+                <input type="radio" name="opcao" id="opcao" value="sim">Sim
+            </label>
+            
+            <label>
+                <input type="radio" name="opcao" id="opcao" value="nao">Não
+            </label>
+
+
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <label for="html"><input type="checkbox" name="a" id="html" value="html">html</label>
+            <label for="css"><input type="checkbox" name="" id="css" value="css">css</label>
+            <label for="js"><input type="checkbox" name="" id="js" value="js">javascript</label>
+
+        </fieldset>
+
+        <fieldset>
+            <select name="" id="">
+                <option value="">Selecione uma opção</option>
+
+                <optgroup label="frontend">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="js">js</option>
+                </optgroup>
+
+                <optgroup label="back">
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <input type="text" list="list" placeholder="selecione uma linguagem">
+            <datalist id="list">
+                <option value="javascript"></option>
+                <option value="css"></option>
+                <option value="html"></option>
+            </datalist>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

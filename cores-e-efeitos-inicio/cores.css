@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #e10f0f;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(blue, red), url('imagens/tile.png');
+    background-attachment: fixed, scroll;
+    background-blend-mode: color;
+
+}
+
+.cores {
+    width: 80%;
+    border: 8px dashed color-mix(in srgb, var(--primary-color), transparent);
+    margin: 20px auto;
+    padding: 26px;
+    background-clip: padding-box;
+}
+
+.cores p {
+    margin: 0;
+}
+
+section {
+    counter-reset: contador;
+}
+
+section .cores {
+    counter-increment: contador;
+}
+
+.cores::before {
+    content: '[ ' counter(contador) ' ]';
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+section .cores:nth-child(2) {
+    background-color: red;
+    background-clip: padding-box;
+}
+
+section .cores:nth-child(3) {
+    background-color: hsl(133, 100%, 60%);
+    transition: all .2s ease-in-out;
+}
+
+section .cores:nth-child(3):hover {
+    background-color: hsl(133, 100%, 50%);
+    cursor: pointer;
+}
+
+section .cores:nth-child(4) {
+    background-image: linear-gradient(10deg, blue, transparent), linear-gradient(to top, red, transparent);
+    background-clip: content-box, padding-box;
+}
+
+section .cores:nth-child(5) {
+    background-image: radial-gradient(ellipse, blue 30%, var(--primary-color), green 50%, yellow);
+}
+
+section .cores:nth-child(6) {
+    background-image: radial-gradient(circle, blue 30%, #f008, green 50%, yellow);
+}
+
+
+section .cores:nth-child(7) {
+    background-image: radial-gradient(circle, blue, #f008, green, yellow);
+}
+
+section .cores:nth-child(8) {
+    background-image: radial-gradient(circle at 30% 10%, blue, red 20%);
+
+}
+
+section .cores:nth-child(9) {
+    background-image: radial-gradient(ellipse at 20% 25%, blue, red 20%);
+}
+
+section .cores:nth-child(10) {
+    background-color: #e10f0f;
+    filter: blur(1px);
+}
+
+section .cores:nth-child(11) {
+    background-color: #e10f0f;
+    filter: grayscale(55%);
+}
+
+section .cores:nth-child(12) {
+    background-color: #e10f0f;
+    filter: invert(100%);
+}
+
+section .cores:nth-child(13) {
+    background-color: #e10f0f;
+    filter: sepia(15%);
+}
+
+section .cores:nth-child(14) {
+    background-color: #e10f0f;
+    transition: filter 2.5s linear;
+}
+
+section .cores:nth-child(14):hover {
+    filter: hue-rotate(1turn)
+}
+
+section .cores:nth-child(15) {
+    background-image: repeating-linear-gradient(to bottom left, black 70px, white 100px);
+}
+
+section .cores:nth-child(16) {
+    background-image: repeating-radial-gradient(closest-side at center, black, white 75%);
+}
+
+section .cores:nth-child(17) {
+    background-image: repeating-conic-gradient(from 0.25turn at 50% 30%, black, white);
+}

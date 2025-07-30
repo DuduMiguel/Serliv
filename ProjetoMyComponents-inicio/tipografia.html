@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar-background">
+        <header class="navbar-header">
+            <img src="imagens/perfil.png" alt="foto de perfil">
+            <nav class="navbar">
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="index.html" class="link"><span>Home</span></a>
+                    </li>
+
+                    <li>
+                        <a href="tipografia.html" class="link">
+                            <span>Tipografia</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cards.html" class="link">
+                            <span>Cards</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="listas.html" class="link">
+                            <span>Listas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="formulario.html" class="link">
+                            <span>Formulários</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="botoes.html" class="link">
+                            <span>Botões</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tabelas.html" class="link">
+                            <span>Tabelas</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="main-background">
+        <main>
+
+            <section class="home">
+                <h1>My Component</h1>
+            </section>
+
+            <article class="tipografia">
+
+                <div class="container">
+                    <h2>Tipografia</h2>
+                    <p>A tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada
+                        respeitado a hierarquia dos elementos na interface</p>
+                </div>
+
+                <h3>Elements</h3>
+
+                <p>Para criar páginas web precisamos aprender sobre <a href="#html-dfn"><abbr
+                            title="HiperText Markup Language">HTML</abbr></a>.</p>
+
+                <h4>Text</h4>
+
+                <p>Isso é em <b>negrito</b> e isso é um <strong>strong.</strong> Isso é em <i>Italic</i> e isso é
+                    <em>enfatizar</em>. Isso é um texto <sup>sobrescrito</sup> e isso é um texto <sub>subescrito.</sub>
+                    Isto é <u>sublinhado</u> e isso é um código: <code>for (;;) {....}.</code> Finalmente, isso é um <a
+                        href="#">Link</a>.
+                </p>
+
+                <h4>Citações</h4>
+
+                <p>De acordo com o site Mozilla, <q>Firefox 1.0 foi lançado em 2004, e, se tornou um grande sucesso</q>
+                </p>
+                <blockquote>Isto é um paragráfo de citação que indica que o texto incluído é uma longa citação.
+                    Normalmente, este é processado visualmente pelo recuo. Uma URL para a fonte de citação pode ser dada
+                    usando o atributo cite. <cite><a href="https://mozilla.com">mozilla.com</a></cite></blockquote>
+
+                <h4>Abreviações</h4>
+
+                <p>Podemos usar <abbr title="Cascating Style Sheets">CSS</abbr> para estilizar nossos arquivos <abbr
+                        title="HyperText Markup Language">HTML</abbr>.</p>
+
+                <h4>Sobrescrito e subescrito</h4>
+
+                <p>Ocasionalmente, você precisará usar sobrescrito e subescrito ao marcar itens como datas, fórmulas
+                    químicas e equações matemáticas para que tenha o significado correto.</p>
+
+                <p>Fórmula química é H<sub>2</sub>O.</p>
+
+                <p>Se X<sup>2</sup> é 9, então x é igual a 3 ou -3.</p>
+
+                <h4>"Coisas" de computador</h4>
+
+                <p>Use tags corretas para representar elementos. Como teclas, trechos de código, código de saída etc.
+                </p>
+
+                <p>Pressione <kbd>CTRL + C</kbd> para copiar</p>
+
+                <p>Utilize a tag <kbd>&lt;kbd&gt;</kbd> para representar uma entrada do teclado</p>
+
+                <pre>     A tag pre formata levando em consideração as quebras de linha e os espaços</pre>
+
+                <pre>
+                    <code>
+                        &lt;script&gt;
+                            alert('oi')
+                        &lt;script&gt;
+                    </code>
+                </pre>
+
+                <h4>Horário e datas</h4>
+
+                <p>O HTML também fornece o elemento &lt;time&gt; para marcar horas e datas em um formato legível por
+                    máquinas. Imagine uma página de eventos.</p>
+
+                <p class="primary-color">Evento sobre <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+                        title="Cascating Style Sheets">CSS</abbr></p>
+
+                <p>O evento ocorrerá em <time datetime="2025-09-15T14:30:00">15 de Setembro de 2025 às 14:30</time></p>
+
+                <p>O evento ocorrerá em <time datetime="2025-09-15">15/09/2025</time></p>
+
+                <p>O evento ocorrerá em <time datetime="2025-09-15T20:00:00">15/09/2025 - 20:00</time></p>
+
+                <p class="primary-color">Confirme sua presença</p>
+
+                <p>O agendamento está marcado para <time datetime="T18:00:00">18h00</time></p>
+
+                <p>Aprender semântica <abbr title="HyperText Markup Language">HTML</abbr> é <del>complicado </del> <u>
+                        fácil</u></p>
+
+                <p>O <dfn id="html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></dfn> é a principal
+                    linguagem da web onde podemos incluir nosso conteúdo de forma semântica</p>
+
+            </article>
+
+        </main>
+    </div>
+
+    <div class="footer">
+        <footer>
+            Produzido como exercício do curso da <a href="https://serliv.com">Serliv</a> Por Eduardo Miguel
+        </footer>
+    </div>
+
+</body>
+
+</html>

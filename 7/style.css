@@ -1,0 +1,323 @@
+body{
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header.header{
+    background-color: #050709;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+div.header-logo{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav.header-nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav.header-nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+nav.header-nav ul li a.nav-link-active{
+    background-color: #CBE30B;
+    color: #0c1014;
+}
+
+nav.header-nav ul li a:hover{
+    background-color: #CBE30B;
+    color: #0c1014;
+}
+
+h1.main-title{
+    font-size: 62px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 42px 0;
+    text-transform: uppercase;
+}
+
+main.pricing{
+    display: flex;
+    gap: 16px;
+}
+
+section.pricing-plan{
+    background-color: #20262B;
+    flex-grow: 1;
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+
+h2.plan-title{
+    font-size: 36px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #CBE30B;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+p{
+    margin-top: 0;
+}
+
+span.plan-price{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+ul.plan-benefits{
+    margin: 0 0 35px 0;
+    color: #b5b5b5;
+    line-height: 1.8;
+    /* flex-grow: 1; */
+    padding-left: 16px;
+}
+
+ul.plan-benefits li::marker{
+    color: #CBE30B;
+}
+
+a.pricing-plan-cta{
+    background-color: #CBE30B;
+    text-align: center;
+    text-transform: uppercase;
+    color: #050709;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-block-start: auto;
+}
+
+a.pricing-plan-cta:hover{
+    background-color: transparent;
+    outline: 2px solid #CBE30B;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width:80%;
+    margin: 0 auto;
+    background-color: #0C1013;
+}
+
+header.header{
+    background-color: #050709;
+    width: 1090px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div.header-logo{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.header-logo{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 20px;
+}
+
+nav.header-nav{
+    position: relative;
+    bottom: 50px;
+    right:  50px;
+}
+
+nav.header-nav ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+nav.header-nav ul li a:hover{
+    background-color: #CBE30B;
+    border-radius: 5px;
+}
+
+h1.main-title{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+main.pricing{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+section.pricing-plan{
+    width: 333px;
+    height: 350px;
+    background-color: #20262B;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h2.plan-title{
+    margin: 15px;
+    padding: 5px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #CBE30B;
+}
+
+span.plan-price{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+ul.plan-benefits{
+    margin: 0;
+}
+
+ul.plan-benefits li::marker{
+    color: #CBE30B;
+}
+
+div.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.pricing-plan-cta{
+    top: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #CBE30B;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+} */

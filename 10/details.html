@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <style>
+
+        body{
+            margin: 0 auto;
+            text-align: center;
+            background-color: #ccc;
+        }
+
+        details{
+            color: red;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        details[open]{
+            color: blueviolet;
+            background-color: beige;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Curso de Programação</h1>
+
+    <details>
+        <summary>Pré-Requisitos</summary>
+        <p>É necessário conhecer a base de sistemas operacionais</p>
+    </details>
+
+    <h1>Curso de IA</h1>
+    
+    <details open>
+        <summary>Pré-Requisitos</summary>
+        <p>É necessário ter acesso à internet</p>
+    </details>
+    
+</body>
+</html>

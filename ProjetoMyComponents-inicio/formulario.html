@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar-background">
+        <header class="navbar-header">
+            <img src="imagens/perfil.png" alt="foto de perfil">
+            <nav class="navbar">
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="index.html" class="link"><span>Home</span></a>
+                    </li>
+
+                    <li>
+                        <a href="tipografia.html" class="link">
+                            <span>Tipografia</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cards.html" class="link">
+                            <span>Cards</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="listas.html" class="link">
+                            <span>Listas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="formulario.html" class="link">
+                            <span>Formulários</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="botoes.html" class="link">
+                            <span>Botões</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tabelas.html" class="link">
+                            <span>Tabelas</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="main-background">
+        <main>
+
+            <section class="home">
+                <h1>My Component</h1>
+            </section>
+
+            <article class="tipografia">
+                <div class="container">
+                    <h2>Formulários</h2>
+                    <p>Formulários HTML são áreas interativas em páginas web onde os usuários podem inserir e enviar
+                        dados para um servidor ou para a própria página</p>
+                </div>
+            </article>
+
+            <section class="form-contact">
+
+                <form action="#">
+
+                    <fieldset>
+
+                        <legend>Entre em contato</legend>
+
+                        <div class="input-container">
+                            <div class="input-control">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                            </div>
+
+                            <div class="input-control">
+                                <label for="UserEmail">Email</label>
+                                <input type="email" name="UserEmail" id="UserEmail" placeholder="Email p/ contato">
+                            </div>
+                        </div>
+
+
+                        <label for="mensagem">Digite sua mensagem</label>
+                        <textarea cols="30" rows="10" name="mensagem" id="mensagem"
+                            placeholder="Digite sua mensagem"></textarea>
+
+
+                        <input class="submit" type="submit" value="Enviar">
+
+                    </fieldset>
+
+                </form>
+
+                <address>
+                    <p>Endereço 1234 Somewhere Rd. Nashville, TN 00000 United States <br> Telefone: 000-000-000 <br>
+                        Email: email@server.com</p>
+                </address>
+
+            </section>
+
+            <section class="form-quiz">
+
+                <form action="#">
+
+                    <fieldset>
+
+                        <legend>Quiz</legend>
+
+                        <label for="linguagem">Qual é a sua linguagem preferida</label>
+                        <select name="linguagem" id="linguagem">
+
+                            <option value="" disabled selected hidden>Selecione </option>
+
+                            <optgroup label="front-end">
+                                <option value="html">html</option>
+                                <option value="css">css</option>
+                                <option value="js">js</option>
+                            </optgroup>
+
+                            <optgroup label="back-end">
+                                <option value="php">PHP</option>
+                                <option value="java">Java</option>
+                            </optgroup>
+
+                        </select>
+
+
+                        <label class="radio-label" for="priBaixa">
+                            <span>Baixa prioridade</span>
+                            <input class="radio" type="radio" name="prioridade" id="priBaixa">
+
+                        </label>
+
+
+
+                        <label class="radio-label" for="priMedia">
+                            <span>Média prioridade</span>
+                            <input class="radio" type="radio" name="prioridade" id="priMedia">
+                        </label>
+
+
+
+                        <label class="radio-label" for="priAlta">
+                            <span>Alta prioridade</span>
+                            <input class="radio" type="radio" name="prioridade" id="priAlta">
+                        </label>
+
+
+                        <div>
+                            <input type="checkbox" name="copy" id="copy"> <label class="label-checkbox"
+                                for="copy">Envia-me uma cópia</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="human" id="human"> <label class="label-checkbox"
+                                for="human">Sou um humano</label>
+                        </div>
+
+                        <div class="cta-container">
+                            <input type="reset" value="Apagar">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+
+                    </fieldset>
+
+                </form>
+            </section>
+
+            <div class="footer">
+                <footer>
+                    Produzido como exercício do curso da <a href="https://serliv.com">Serliv</a> Por Eduardo Miguel
+                </footer>
+            </div>
+
+
+
+</body>
+
+</html>

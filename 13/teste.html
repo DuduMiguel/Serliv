@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        section h1 + p{
+            background-color: orange;
+        }
+
+        article p + p{
+            background-color: red;
+        }
+
+        main h1 ~ p{
+            background-color: purple;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section>
+
+        <h1>Olá</h1>
+        <p>Testando</p>
+        <p>Aqui</p>
+        <p>aaa</p>
+    
+    </section>
+
+    <article>
+
+        <h1>Opa</h1>
+        <p>Teste</p>
+        <p>Teste</p>
+        <p>Teste</p>
+
+    </article>
+
+    <main>
+        <h1>Titulo aqui</h1>
+        <p>um paragrafo aqui</p>
+        <h2>um subtitulo</h2>
+        <p>mais um paragrafo</p>
+        <p>outro paragrafo</p>
+        <section>
+            <p>um paragrafo dentro de uma section</p>
+        </section>
+        <p>fora da section mesmo nivel hierarquico</p>
+    </main>
+    
+</body>
+</html>

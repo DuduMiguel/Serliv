@@ -1,0 +1,101 @@
+h1{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+
+    text-align: center;
+    text-decoration: underline;
+
+    color: red;
+    background-color: #f0f0f0;
+}
+
+p{
+    font-size: 20px;
+}
+
+p.name{
+    color: blueviolet;
+}
+
+p.goal{
+    color: purple;
+}
+
+li{
+    font-size: 20px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: square;
+    margin-left: 20px;
+    color: black
+}
+
+ul li.qualifications1{
+    color: firebrick
+}
+
+ul li.qualifications2{
+    color:bisque
+}
+
+ul li.qualifications3{
+    color:aquamarine
+}
+
+
+body{
+    background-color: #ccc;
+}
+
+p.radius{
+    background-color: aqua;
+    width:20%;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    border-radius: 15px;
+}
+
+p.left{
+    background-color: aquamarine;
+    width: 15%;
+    font-size: 32px;
+    padding: 15px;
+    margin: 15px auto;
+    border-left: 5px solid brown;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p.outline{
+    background-color: blueviolet;
+    width:20%;
+    padding: 25px;
+    margin: 35px auto;
+    outline: 10px solid red;
+    outline-offset: 10px;
+}
+
+
+.inline{
+    background-color: cadetblue;
+    display: inline;
+}
+
+.block{
+    display: block;
+    background-color: chocolate;
+}

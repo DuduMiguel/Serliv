@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Login</title>
+
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;  
+        }
+
+        html{
+            font-family: sans-serif;
+            font-size: 62.5%;
+            
+        }
+
+        body{
+            background-color: #95A5A6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1{
+            font-size: 2.4rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        form{
+            background-color: white;
+            width: 35em;
+           
+        }
+
+        fieldset{
+            border: none;
+            padding: 1.5rem;
+        }
+
+        legend{
+            padding: .5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+
+
+        input{
+            display: block;
+            width: 100%;
+            padding: 7.5px;
+            margin: 1rem 0;
+            border: 1px solid #bbb;
+            background-color: burlywood;
+            border-radius: 3px;
+        }
+
+        div{
+            display: flex;
+            gap:10px;
+            justify-content: space-between;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+        }
+
+        .btn-submit{
+            background-color: blue;
+            border: none;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Formulário Login</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>Login</legend>
+
+            <label for="user">Usuário: </label>
+            <input type="text" name="user" id="user" required autofocus>
+
+            <label for="password">Senha: </label>
+            <input type="password" name="password" id="password" required minlength="12">
+
+            <div>
+                <input class="btn btn-submit" type="submit" value="Entrar">
+                <input class="btn btn-reset" type="reset" value="Limpar">
+            </div>
+
+        </fieldset>
+
+
+    </form>
+
+</body>
+
+</html>

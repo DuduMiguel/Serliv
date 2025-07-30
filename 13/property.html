@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @property --success-color {
+            syntax: "<color>";
+            inherits: false;
+            initial-value: green;
+        }
+
+        @property --angle{
+            syntax: "<angle>";
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        :root {
+            --success-color: blue;
+        }
+
+        p {
+            color: var(--success-color);
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: var(--success-color, orange);
+            transform: rotate(var(--angle));
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+        button{
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            background-color: #aaffaa;
+            margin-top: 125px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color .4s ease-in-out;
+        }
+
+        button:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+
+        @property --angle-animation{
+            syntax: "<angle>";
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        div{
+            height: 250px;
+            width: 250px;
+            background-color: var(--success-color);
+            transform: rotate(var(--angle-animation));
+            animation: rotate 5s linear infinite
+        }
+
+        @keyframes rotate {
+            to{
+                --angle-animation: 360deg;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis assumenda in aut provident molestiae deleniti
+        laborum inventore illo ex neque odio quam exercitationem quibusdam blanditiis temporibus eligendi, laboriosam
+        nam minus!</p>
+
+    <div>
+
+        ANIMAÇÃO!!!
+
+    </div>
+
+    <button>Olá</button>
+
+
+
+</body>
+
+</html>

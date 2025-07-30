@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+
+    <style>
+        a[target="_blank"]::after {
+            content: url(img/newWindow-icon.png);
+            padding-left: 5px;
+        }
+
+        a[href$=".pdf"]::before {
+            content: url(img/pdf-icon.gif);
+            padding-right: 5px;
+        }
+
+        input[type="checkbox"]:checked+label {
+            color: green;
+        }
+
+        :not(input[type="checkbox"]:checked)+label {
+            color: red;
+        }
+
+        input[type="checkbox"]:disabled+label {
+            color: blue;
+        }
+
+        li li:nth-child(3) {
+            background-color: tomato;
+        }
+
+        input[type="text"]{
+            margin-top: 1em;
+            background-color: #ccc;
+            border: none;
+            padding: 10px;
+
+            &:focus{
+                background-color: white;
+                outline: 2px solid black;
+                
+            }
+        }
+
+        h5{
+            font-size: 32px;
+        }
+        
+        h5::first-line{
+            color:aquamarine
+        }
+
+        h5::first-letter{
+            color: red;
+            font-size: 3em;
+            float: left;
+            margin-right: .2em;
+        }
+
+        h5::selection{
+            background-color: bisque;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Desafio</h1>
+
+    <ol>
+        <li>Incluir icone DEPOIS do texto dos links que abrem uma nova aba</li>
+        <li>incluir icone ANTES do texto dos links que abrem um PDF</li>
+        <li>Colorir os textos dos labels que vêem após os checkboxes seguindo a seguinte regra
+            <ol>
+                <li>Após o status checked a cor do label deve ser verde</li>
+                <li>Após o status não checked a cord do label deve ser vermelho</li>
+                <li>Se o label vem após um checkbox disabled, a cor deve ser azul</li>
+                <li>Nessa lista ordenada, colocar um background qualquer no terceiro filho (li) desde que esteja contido
+                    dentro de outra lista (ul ou ol)</li>
+            </ol>
+        </li>
+    </ol>
+
+    <p><b>Atenção:</b> Não é permitido alterar nada no HTML (nem mesmo adicionar classes)</p>
+
+    <a href="http://serfrontend.com" target="_blank">Link externo</a>
+    <br>
+    <a href="arquivo.pdf">download do pdf</a>
+
+    <hr>
+
+    <input type="checkbox" name="cb1" id="cb1">
+    <label for="cb1">li e aceito o contrato</label>
+
+    <input type="checkbox" name="cb2" id="cb2" disabled>
+    <label for="cb2">Li e aceito o contrato</label>
+
+    <form action="#">
+
+        <input type="text" name="texto" id="texto" placeholder="escreva">
+
+    </form>
+
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quos, voluptates est dolores reiciendis aut quaerat in temporibus quidem maxime, tempora nemo ex delectus ratione?</h5>
+
+</body>
+
+</html>

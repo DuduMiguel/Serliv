@@ -1,0 +1,77 @@
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #7B3D3E;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    margin-bottom: 25px;
+}
+
+.circle {
+    clip-path: circle(50% at center);
+    /*  Primeiro valor na vertical e segundo na horizontal
+        clip-path: circle(50% at 50% 100%)
+        clip-path: circle(50% at 100% 50%)
+    */
+}
+
+.ellipse {
+    clip-path: ellipse(60% 40% at center);
+    position: relative;
+}
+
+.ellipse::before {
+    content: "";
+    color: white;
+    display: block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    clip-path: circle(50% at center);
+    background-color: #7B3D3E;
+}
+
+.inset {
+    clip-path: inset(60px 45px 30px 15px);
+    /* Diminui no top - right - bottom - left */
+}
+
+.inset-round {
+    clip-path: inset(20px round 50px 20px 10px 25% / 20px 50px);
+}
+
+/*  
+    20px: 
+    recorte de 20px em todos os lados do elemento. 
+    
+    round: 
+    sinaliza que os próximos valores vão arredondar os cantos: 50px 20px 10px 25%: determinam o raio do arredondamento em cada canto, na ordem:
+    Topo esquerdo (50px), topo direito (20px), canto inferior direito (10px), canto inferior esquerdo (25%).
+
+    Após a barra /:
+    20px 50px: valores verticais dos raios de arredondamento, aplicados respectivamente aos cantos superiores esquerdo (20px) e direito (50px). Se faltar valores, o CSS repete e distribui segundo as regras do shorthand
+
+*/
+
+.seta{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.teste{
+    padding: 5px;
+    width: 150px;
+    height: 25px;
+    border-radius: 0 10px 10px;
+}

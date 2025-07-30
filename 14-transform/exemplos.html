@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+
+        body{
+            margin-bottom: 100vh;
+        }
+
+        div{
+            outline: 1px solid #888;
+            width: 80%;
+            margin: .5em auto;
+        }
+
+        p{
+            width: 50%;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+
+           /* usando translate o tamanho em % é relativo ao próprio elemento (o p) */
+        .div1 .destaque{
+            transform: translate(50%, 55%);
+        }
+
+        /* usando position o tamanho em % é relativo ao elemento pai (a div) e o top so funciona com uma altura (height) definida*/
+        .div2 .destaque{ 
+            position: relative;
+            left: 50%;
+            top: 25%;
+        }
+
+        .div3 .destaque{
+            transform: rotate(180deg);    
+        }
+
+        .div4 .destaque{
+            transform: scale(1.2, 1.4);
+            margin: 0 auto;
+        }
+
+        .div5 .destaque{
+            transform: skew(45deg);
+        }
+
+        .div6 .destaque{
+            transform: translate(100px) rotate(45deg);
+            transform-origin: left bottom;
+        }
+
+        .div7 .destaque{
+            transform: rotate(45deg) translate(100px);
+            transform-origin: left bottom;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="div1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div3">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div4">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div5">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div6">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+    
+    <div class="div7">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p class="destaque">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aut.</p>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+#div1{
+    background-color: rgba(255, 0, 0, .5);
+    padding: 10px;
+    width: 50%;
+    position: sticky;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+}
+
+#div2{
+    background-color: rgba(0, 255, 0, .5);
+    padding: 10px;
+    width: 80%;
+    height: 50px;
+    position: static;
+}
+
+#div3{
+    background-color: rgba(0, 0, 255, .5);
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    position: static;
+    top: 20px;
+    right: 0;
+}
+
+#container{
+    position: relative;
+}
+
+#centered{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    opacity: .3;
+}

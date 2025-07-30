@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 62.5%;
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #fafafa;
+}
+
+header{
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header a{
+   margin-left: 4em;
+}
+
+nav{
+    margin-right: 3.5em;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+li>a{
+    color: #FED001;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.6em;
+    border: 1px solid;
+}
+
+li>a:hover{
+    background-color: black;
+}
+
+aside{
+    background-image:linear-gradient(#FFFFFF,#FFFF38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container{
+    font-size: 6.8em;
+    margin-left: 3.3em;
+    color: #2A2A2A;
+}
+
+.text-container p > span{
+    text-transform: uppercase;
+}
+
+.text-container a{
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    background-color: #FED001;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #2A2A2A;
+    transition: all 0.2s ease-out;
+}
+.text-container a:hover{
+    background-color: rgba(255, 162, 56, 0.432);
+}
+
+.cursos-section{
+    padding: 35px 0;
+}
+ 
+.cursos-section h1{
+    text-align: center;
+    font-size: 4em;
+    color: #071D2E;
+    margin: 4.5rem 0;
+}
+
+.cursos-section > div{
+    margin-bottom: 4.5em;
+}
+
+.cursos-section div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.cursos-section article{
+    width: 40.2em;
+}
+
+article img{
+    width: 100%;
+}
+
+.cursos-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    border: 1px solid #ECEFF4;
+    border-top: none;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    background-color: white;
+}
+
+.cursos-content h2{
+    font-size: 2.4em;
+    color: #0A0A0A
+}
+
+.cursos-content p{
+    font-size: 1.6em;
+    line-height: 1.6rem;
+    color: #4D4D4D;
+}
+
+.cursos-section a{
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #FED001;
+    color: #071D2E;
+    font-size: 2em;
+    padding: 16px 48px;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.cursos-section a:hover{
+    background-color: rgb(254, 174, 1);
+}
+
+.about{
+    padding-left: 6.8em;
+    padding-top: 12em;
+    display: flex;
+    background-image: linear-gradient(#003464, #022D54);
+    margin-bottom: 3.5rem;
+}
+
+.about div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.about > .img-about{
+    margin-right: 3em;
+}
+
+.about > .text-about{
+    padding: 20px;
+}
+
+.about h2{
+    font-size: 4rem;
+    margin-left: 35px;
+}
+
+.about p{
+    font-size: 2em;
+    line-height: 1.9rem;
+    padding: 35px;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 3.5rem;
+    color: #071D2E;
+}
+
+.contact .map{
+    margin: 0 auto;
+    width: 127.6em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact address{
+    margin-top: .5em;
+    text-align: right;
+    font-size: 1.8em;
+}
+
+footer{
+    margin-top: 2.5em;
+    background-color: #2A2A2A;
+    padding: 25px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+}

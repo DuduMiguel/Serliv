@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+    background-color: aqua;
+    height: 100vh;
+    padding: 32px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ul.lista{
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    gap: 15px;
+}
+
+li{
+    flex-basis: 280px;
+    height: 350px;
+    background-color: white;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+div.profile-pic{
+    background-image: url(imagens/thumb02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+div.profile-pic img{
+    position: absolute;
+    border-radius: 50%; 
+    width: 75px;
+    top: 80%;
+}
+
+div.about{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    padding: 10px;
+}
+
+div.about p.name{
+    font-size: 24px;
+    color: #385555;
+    margin: 0;
+}
+
+div.about p.email{
+    margin: 5px 0 0 0;
+    color: #aaa;
+}
+
+div.icons{
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 17%;
+    gap: 100px;
+    padding: 10px;
+}

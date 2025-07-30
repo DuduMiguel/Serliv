@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ccc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        h1{
+            font-size: 3.2rem;
+        }
+
+        section {
+            width: 160rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+            padding: 1.5rem;         
+            border-radius: 5px;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+            background-color: white;
+            
+        }
+
+        div {
+            width: calc(25% - 1.5rem);
+            position: relative;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            /* opacity: .5; */
+            transform: scale(1);
+            transition: all .4s ease-in;
+        }
+
+        p {
+            color: white;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.425);
+            border-top: 3px solid white; 
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: .1rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .2;
+            transform: translateY(100%);
+            transition: all .3s ease-in-out;
+        }
+
+        div:hover a img {
+            /* opacity: 1; */
+            transform: scale(1.2)
+        }
+
+        div:hover a img~p{
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        div::after{
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            background-color: rgba(255, 255, 255, 0.507);
+            pointer-events: none;
+            transform: scale(1);
+            transition: all .2s;
+        }
+
+        div:hover::after{
+            transform: scale(.5);
+            opacity: 0;
+            
+        }
+
+        div.dialog{
+            background-color: #aaffaa;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+       
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Gallery</h1>
+
+    <section>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=1" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=2" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=3" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=4" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=5" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=6" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=7" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <img src="https://picsum.photos/400/300?random=8" alt="">
+                <p>Descrição da imagem aqui</p>
+            </a>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

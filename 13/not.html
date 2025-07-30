@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div :not(p){
+            color: orange;
+        }
+
+        h3:not(.destaque){
+            color: blue;
+        }
+
+        body :not(h4){
+            color: orange;
+        }
+
+        h4.teste::selection{
+            color: black;
+            background-color: aquamarine;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h4>Olá</h4>
+    <h5>Opa</h5>
+
+    <h4 class="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis, numquam tenetur doloribus, est ea impedit ipsa repellat quam saepe consectetur id praesentium amet ut? Consequatur laborum fugiat quidem at eaque sunt ipsa?</h4>
+
+    <div>
+        
+        <p>Paragrafo</p>
+        
+        <h1>Titulo</h1>
+        
+        <h2>Subtitulo</h2>
+        
+        <p>Paragrafo</p>
+    </div>
+    
+   
+    <h3>Teste</h3>
+
+    <h3 class="destaque">Teste</h3>
+
+    <h3 class="destaque">Teste</h3>
+
+    <h3 class="zulu">Teste</h3>
+
+</body>
+</html>

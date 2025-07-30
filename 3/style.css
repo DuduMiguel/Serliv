@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+    background-image: url('imagens/bg.jpg');
+}
+
+p{
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+
+div{
+    text-align: center;
+}
+
+.img-logo{
+    width: 400px;
+    height: 350px;
+}
+
+.img-html{
+    float: left;
+}
+
+.img-css{
+    float: right;
+}
+
+.transparencia{
+    background-color: black;
+}
+
+.p1{
+    background-color: #ccc;
+    line-height: 1.5;
+    text-align: justify;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.container {
+            position: relative;
+        }
+
+        div.emoji {
+            background-color: #ffaaff;
+            padding: 10px;
+            color: black;
+            max-width: 100%;
+            border-radius: 5px;
+
+        }
+
+        div.emoji::after {
+            content: "❤️";
+            position: absolute;
+            transform: translate(-25%, -85%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="emoji">
+            Clique aqui para acessar!
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+    <style>
+        input {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            outline: none;
+            overflow: hidden;
+        }
+
+        span {
+            display: inline-block;
+           
+            width: 70px;
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            position: relative;
+            transition: background-color .2s ease-in;
+        }
+
+        label input[type="checkbox"]:focus~span {
+            outline: 1px solid black;
+            outline-offset: 2px;
+        }
+
+        label input[type="checkbox"]:checked~span {
+            background-color: green;
+        }
+
+        label :not([type="checkbox"]:checked)~span{
+            background-color: red;
+            
+        }
+
+        label :not(input[type="checkbox"]:checked)~span::before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 33px;
+            width: 33px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translate(2px,1px);
+            opacity: 0;
+            transition: transform .5s;
+            
+        }
+
+        label input[type="checkbox"]:checked~span::before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 33px;
+            width: 33px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translate(105%, 1px);
+            opacity: 0;
+            transition: transform .5s;
+            
+        }
+
+        label input[type="checkbox"]:checked~span::before {
+            opacity: 1;
+        } 
+
+        label :not(input[type="checkbox"]:checked)~span::before {
+            opacity: 1;
+        }
+
+        :has(input[type="checkbox"]:checked.modoClaro) body {
+            background-color: #ccc;
+        }
+
+        :has(input[type="checkbox"]:checked.modoEscuro) body {
+            background-color: #3d3d3d;
+        }
+
+        :has(input[type="checkbox"]:checked.modoLaranja) body {
+            background-color: rgb(219, 151, 23);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <label class="switch">
+        <input type="checkbox" checked class="modoClaro">
+        <span></span>
+        Modo claro
+    </label>
+
+    <label class="switch">
+        <input type="checkbox" class="modoEscuro">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="switch">
+        <input type="checkbox" class="modoLaranja">
+        <span></span>
+        JS
+    </label>
+
+
+
+</body>
+
+</html>

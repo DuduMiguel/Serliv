@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #3a68b7;
+    --Roboto-Font: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--Roboto-Font);
+    background-color: var(--main-color);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form{
+    width: 80%;
+    min-width: 45rem;
+    max-width: 56rem;
+    background-color: white;
+    border-left: 5px solid #2B487C; 
+}
+
+.sign-up-fieldset{
+    border: none;
+    padding: 2rem;
+}
+
+.form-legend{
+    display: block;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+.form-label{
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--main-color);
+    padding: 1rem 0;
+    transition: padding-left .06s;
+}
+
+.form-input:focus{
+    border: 2px solid var(--main-color); 
+    padding-left: .5rem; 
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.btn-containers{
+    margin-top: .5rem;
+}
+
+.btn-submit{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: var(--Roboto-Font);
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color ease .3s;
+    padding: 1.5rem 1.75rem;
+}
+
+.sign-in-link{
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+.sign-up-link{
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: var(--Roboto-Font);
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    transition: background-color ease .3s;
+}
+
+.btn-submit:hover{
+    background-color: #305596;
+}
+
+.sign-up-link:hover{
+    color: #305596;
+}
+
+.forgot-password {
+    display: block;
+    align-self: center;
+    font-size: 1.4rem;
+}
