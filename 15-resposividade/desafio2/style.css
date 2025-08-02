@@ -3,33 +3,42 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
 h1 {
     font-size: 2.5rem;
+    margin-top: 0;
     text-align: center;
 }
 
 section.card-container {
     min-width: 320px;
     background-color: #ccc;
-    border-top-right-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 div.img-container {
     background-color: white;
-    
+    border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+
 }
 
 .img-container img {
     background-color: transparent;
     width: 100%;
+    object-fit: contain;
     display: block;
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
 }
 
 .card-description {
-    padding-bottom: .5rem;
+    padding: 1rem 1.5rem 2rem;
+
 }
 
 .card-description p {
@@ -59,34 +68,33 @@ div.img-container {
 }
 
 @media screen and (min-width: 666px) {
-    .card-container {
+    section.card-container {
         max-width: 60rem;
         margin: 0 auto;
         display: flex;
+        flex-direction: row;
         gap: 1.8rem;
-        outline: 2px solid red;
     }
 
-    div.img-container{
+    div.img-container {
         width: 100%;
-        outline: 2px solid blue;
+        border-bottom: none;
+        border-right: 2px solid rgba(0, 0, 0, 0.459);
     }
 
-    .card-description {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.5rem;
+    .img-container img{
+        min-height: 100%;
+        object-fit: cover;
     }
 
     .card-description p {
         font-size: 2rem;
         letter-spacing: .05rem;
-        line-height: 1.8rem;
+        line-height: 2.4rem;
         margin: 1.6rem 1rem 1.6rem 0;
     }
 
     .card-description a {
-        width: fit-content;
         margin-left: 0;
     }
 }
