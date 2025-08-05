@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-color: #612673;
+    --secondary-color: #703C80;
+    --btn-color: #59C4C5;
+    --default-gap: 1rem;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.header-container {
+    position: sticky;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+header.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+div.img-container {
+    align-self: center;
+    padding: 1.5rem;
+}
+
+div.img-container img {
+    display: block;
+    width: 100%;
+}
+
+nav.main-nav {
+    text-align: center;
+
+}
+
+nav.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.main-nav ul li {
+
+    background-color: var(--main-color);
+}
+
+nav.main-nav ul li a {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    transition: background-color .3s ease-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+nav.main-nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+nav.main-nav ul li a:focus-visible {
+    font-weight: bolder;
+    background-color: var(--secondary-color);
+    border-bottom-color: white;
+    outline: none;
+}
+
+div.main-container{
+    background-color: #F6F6F6;
+}
+
+main.main-content {
+    background-color: #F6F6F6;
+}
+
+main.main-content section.container {
+    margin-top: 2.5rem;
+}
+
+article.descubra {
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+article.descubra div.img-container {
+    display: none;
+}
+
+article.descubra h1 {
+    color: var(--main-color);
+    font-size: 2.6rem;
+    margin: 0 0 2rem;
+}
+
+
+article.descubra h2 {
+    color: var(--secondary-color);
+    margin: 0 0 2rem;
+}
+
+article.descubra a {
+    background-color: var(--btn-color);
+    padding: .8rem 1rem;
+    margin-bottom: .8rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 15rem;
+    transition: background-color .3s ease-out;
+}
+
+article.descubra a:hover {
+    background-color: color-mix(in srgb, var(--btn-color), black 5%);
+}
+
+section.middle-content {
+    padding: 3.2rem;
+}
+
+section.middle-content article {
+    text-align: center;
+}
+
+section.middle-content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: .5rem;
+    background-color: #b08bbb;
+    border: 2px solid rgba(0, 0, 0);
+    padding: 1rem;
+}
+
+section.middle-content a span {
+    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 1rem;
+}
+
+section.middle-content a h3 {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+section.middle-content a p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+section.cards-section {
+    padding: 0 3.2rem;
+    margin-bottom: 1rem;
+}
+
+
+section.cards-section div.img-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+section.cards-section div.img-container img {
+    display: block;
+    width: 100%;
+    transition: transform .2s ease;
+}
+
+section.cards-section div.img-container:hover img{
+    transform: scale(1.3);
+}
+
+section.cards-section div.card-description {
+    padding: 2rem;
+    background-color: #cccccc9f;
+    border: 2px solid #ccc;
+    border-top: 2px solid;
+}
+
+section.cards-section div.card-description h3 {
+    text-transform: uppercase;
+    color: var(--main-color);
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+section.cards-section div.card-description p {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+div.footer-container{
+    background-color: #ccc;
+}
+
+footer{
+    padding: .5rem;
+    text-align: center; 
+    font-size: 1.6rem;
+}
+
+/* col-md */
+@media screen and (min-width: 55em) {
+    header.main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 102.4rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    nav.main-nav {
+        height: fit-content;
+        align-self: center;
+        padding: 0 2rem;
+    }
+
+    nav.main-nav ul {
+        text-align: center;
+    }
+
+    nav.main-nav ul li {
+        display: inline-block;
+        border-bottom: none;
+        margin-right: 2rem;
+        background-color: white;
+    }
+
+    nav.main-nav ul li a {
+        padding: .5rem;
+        font-size: 2rem;
+        color: var(--main-color);
+        transition: background-color .3s ease-out, transform .3s ease-out;
+    }
+
+    nav.main-nav ul li a:hover {
+        background-color: transparent;
+        color: var(--main-color);
+        transform: translateY(-6px);
+    }
+
+    nav.main-nav ul li a:focus-visible {
+        background-color: transparent;
+        color: var(--main-color);
+        transform: translateY(-6px);
+        outline: none;
+    }
+
+    main.main-content section.container {
+        margin-top: 0;
+        background-color: var(--main-color);
+    }
+
+    article.descubra div.img-container {
+        display: inline-block;
+        width: 95px;
+        margin: 0 auto;
+    }
+
+    article.descubra h1 {
+        font-size: 3.2rem;
+        color: white;
+        font-weight: lighter;
+    }
+
+    article.descubra h2 {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: lighter;
+    }
+
+    article.descubra a {
+        margin-bottom: 1rem;
+    }
+
+    .col-md-6 {
+        width: calc(50% - var(--default-gap));
+    }
+
+    section.middle-content a {
+        margin-top: 0;
+    }
+
+    section.cards-section div.card-description {
+        padding: 1rem 1.5rem;
+        border: 2px solid #ccc;
+        border-left: 2px solid black;
+    }
+
+    section.cards-section div.card-description h3 {
+        margin-top: 1rem;
+    }
+
+    section.cards-section div.card-description p {
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    section.cards-section article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-description {
+        padding-left: 0;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+}
+
+/* col-lg */
+@media screen and (min-width: 60em) {
+    main.main-content section.container {
+        background-image: url('../images/bg_topo_1198x670.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        background-attachment: fixed;
+        /* padding: 10rem; */
+        aspect-ratio: 1198/670;
+        padding-top: 1px;
+    }
+
+    article.descubra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+}
+
+/* col-xl */
+@media screen and (min-width: 70em) {
+    main.main-content {
+        width: 100%;
+        max-width: 102.4rem;
+        margin: 0 auto;
+    }
+
+    main.main-content section.container {
+        /* background-image: url('../images/bg_topo_1600x1374.jpg'); */
+        background-image: linear-gradient(transparent, var(--main-color)), url('../images/bg_topo_1600x1374.jpg');
+        background-position: center top;
+        background-size: contain;
+        padding: 1rem;
+
+    }
+
+    article.descubra h2 {
+        font-weight: 700;
+    }
+
+    section.middle-content,
+    section.cards-section {
+        padding: 3.2rem 0;
+    }
+
+    section.cards-section {
+        padding-top: 0;
+    }
+
+    .col-xl-3 {
+        width: calc(25% - var(--default-gap));
+    }
+
+    .col-xl-6{
+        width: calc(50% - var(--default-gap));
+    }
+
+    section.cards-section article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.cards-section div.card-description {
+        padding: 1rem 1.5rem;
+        border: 2px solid #ccc;
+        border-top: 2px solid black;
+    }
+
+}
