@@ -41,6 +41,7 @@ div.header-container {
     right: 0;
     left: 0;
     top: 0;
+    z-index: 100;
 }
 
 header.main-header {
@@ -97,7 +98,7 @@ nav.main-nav ul li a:focus-visible {
     outline: none;
 }
 
-div.main-container{
+div.main-container {
     background-color: #F6F6F6;
 }
 
@@ -196,6 +197,7 @@ section.cards-section {
 section.cards-section div.img-container {
     padding: 0;
     overflow: hidden;
+    z-index: 0;
 }
 
 section.cards-section div.img-container img {
@@ -204,7 +206,7 @@ section.cards-section div.img-container img {
     transition: transform .2s ease;
 }
 
-section.cards-section div.img-container:hover img{
+section.cards-section div.img-container img:hover {
     transform: scale(1.3);
 }
 
@@ -243,13 +245,13 @@ section.cards-section div.card-description p {
     width: 100%;
 }
 
-div.footer-container{
+div.footer-container {
     background-color: #ccc;
 }
 
-footer{
+footer {
     padding: .5rem;
-    text-align: center; 
+    text-align: center;
     font-size: 1.6rem;
 }
 
@@ -423,7 +425,7 @@ footer{
         width: calc(25% - var(--default-gap));
     }
 
-    .col-xl-6{
+    .col-xl-6 {
         width: calc(50% - var(--default-gap));
     }
 
