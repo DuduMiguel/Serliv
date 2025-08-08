@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+
+    <video controls>
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogv" type="video/ogg">
+        <source src="media/video.webm" type="video/webm">
+        <track src="media/track.pt.vtt" kind="captions" srclang="pt-br" label="Português-BR" default>
+        <track src="media/track.en.vtt" kind="captions" srclang="en-us" label="English-US">
+        <p>Seu browser não suporta a funcionalidade de vídeo</p>
+    </video>
+    <!-- Atributo default serve para ativar a legenda automaticamente -->
+    <!-- atributo kind
+O atributo kind pode conter os seguintes valores: subtitles, captions, descriptions, chapters e metadata.
+
+Atributo kind
+
+Como a faixa de texto deve ser usada. Se omitido, o tipo padrão é subtitles. 
+Se o atributo contiver um valor inválido, ele será usado metadata.
+(as versões do Chrome anteriores a 52 tratavam um valor inválido como subtitles). 
+
+As seguintes palavras-chave são permitidas:
+
+subtitles
+
+As legendas fornecem a tradução do conteúdo que não pode ser compreendido pelo espectador. 
+Por exemplo, fala ou texto que não seja inglês em um filme em inglês.
+
+As legendas podem conter conteúdo adicional, geralmente informações extras de fundo. 
+Por exemplo, o texto no início dos filmes Star Wars ou a data, hora e local de uma cena.
+
+captions
+
+As legendas ocultas fornecem uma transcrição e possivelmente uma tradução do áudio.
+
+Pode incluir informações não verbais importantes, como pistas musicais ou efeitos sonoros. 
+Pode indicar a fonte da sugestão (por exemplo, música, texto, personagem).
+
+Adequado para usuários surdos ou quando o som está mudo.
+
+descriptions
+
+Descrição textual do conteúdo do vídeo.
+
+Adequado para usuários cegos ou onde o vídeo não pode ser visto.
+
+chapters
+
+Os títulos dos capítulos devem ser usados ​​quando o usuário estiver navegando no recurso de mídia.
+
+metadata
+
+Faixas usadas por scripts. Não visível para o usuário.
+
+Fonte: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track -->
+</body>
+
+</html>
