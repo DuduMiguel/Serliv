@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100dvh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #585CE6, #2D2F7B);
+}
+
+.grid-container {
+    height: fit-content;
+    width: 30%;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #406289;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .6);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.grid-item{
+    background-image: linear-gradient(to bottom, #2F2F2F,#232020 );
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    border-top: 2px solid #6B6B6B;
+    border-left: 2px solid #6B6B6B;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.visor{
+    grid-column: 1 / span 4;
+    text-align: right;
+}
+
+.soma{
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero{
+    grid-column: span 2;
+}
