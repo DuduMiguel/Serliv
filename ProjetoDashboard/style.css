@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease .3s;
+
+}
+
+li>a,
+a.logout-btn {
+    display: flex;
+}
+
+svg {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a:hover {
+    color: black;
+    transform: translateX(5px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px repeat(2, 1fr);
+    grid-template-rows: 70px repeat(1, 1fr);
+}
+
+.main-nav {
+    background-color: #ccc;
+    padding: 15px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.main-nav ul {
+    margin: 15px 0;
+}
+
+.main-nav ul li {
+    margin-bottom: 10px;
+}
+
+.main-nav a {
+    margin-block-start: auto;
+}
+
+.main-header {
+    background-color: #dedede;
+    padding: 5px 15px;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.cta-buttons ul {
+    display: flex;
+    gap: 15px;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.profile-img{
+    height: 100%;
+    margin-right: 15px;
+}
+
+.profile-img img {
+    height: 100%;
+}
+
+.profile-data{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.main-content {
+    background-color: aliceblue;
+    padding: 5px 15px;
+    gap: 15px;
+    grid-column: 2 / -1;
+    grid-row: 2 /-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px;
+    min-height: 100dvh;
+}
+
+.data-dashboard {
+    margin-top: 15px;
+    background-color: white;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.data-dashboard h2 span {
+    color: blue;
+}
+
+div.pipe-line{
+   width: 1px;
+   border-right: 1px solid #ddd;
+   align-self: stretch;
+}
+
+.data-dashboard a {
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    align-self: center;
+    padding: 10px 24px;
+    color: white;
+    background-color: #004EDA;
+    transition: background-color .3s ease;
+}
+
+.data-dashboard a:hover{
+    transform: translate(0);
+    background-color: #0059ff;
+}
+
+.main-chart {
+    grid-column: 1 / -1;
+}
+
+.chart-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
