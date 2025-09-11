@@ -11,12 +11,10 @@
 }
 
 body {
-    width: 100dvw;
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: var(--dark);
     text-align: center;
-    overflow-x: hidden;
 }
 
 .content-wrapper-center {
@@ -58,6 +56,16 @@ h2 {
 
 .header {
     text-align: left;
+}
+
+.hero_title {
+    margin-bottom: 1rem;
+}
+
+.hero_title ~ p{
+    margin-bottom: .8rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .btn {
@@ -182,6 +190,12 @@ i {
     color: var(--primary-color-dark);
 }
 
+.links-container{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
 .hero,
 .brands,
 .branding,
@@ -189,6 +203,17 @@ i {
 .contato {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.about ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    color: var(--primary-color);
+}
+
+.about ul li a:hover {
+    color: var(--primary-color-dark);
 }
 
 .row {
@@ -202,6 +227,16 @@ i {
     grid-column: 1 / -1;
 }
 
+.link-separator {
+    display: none;
+}
+
+section h3,
+p,
+ul {
+    margin: .5rem 0 .5rem;
+}
+
 @media screen and (min-width: 46.25em) {
     .row {
         gap: 2rem;
@@ -209,10 +244,6 @@ i {
 
     .content {
         text-align: left;
-    }
-
-    .hero_title {
-        margin-bottom: 2.5rem;
     }
 
     .btn {
@@ -315,8 +346,6 @@ i {
     }
 
     .about ul {
-        display: flex;
-        flex-direction: column;
         gap: .5rem;
     }
 
@@ -330,6 +359,10 @@ i {
         display: flex;
         gap: 1rem;
         margin: 0;
+    }
+
+    .link-separator {
+        display: inline-block;
     }
 }
 
@@ -358,6 +391,18 @@ i {
         grid-column: 7 / -1;
     }
 
+    .row>.lg-4-6 {
+        grid-column: 4 / 6;
+    }
+
+    .row>.lg-6-9 {
+        grid-column: 6 / 9;
+    }
+
+    .row>.lg-9-12 {
+        grid-column: 9 / 12;
+    }
+
     .testemunho {
         flex-direction: column;
     }
@@ -375,7 +420,7 @@ i {
         margin: .5rem;
     }
 
-    .contato_content{
+    .contato_content {
         margin: auto;
     }
 }
